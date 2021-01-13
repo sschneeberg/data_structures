@@ -6,11 +6,11 @@ class Graph:
         for i in values: 
             self.values[i] = []
 
-    def add_edge_directed(self, node, to):
+    def add_edge_directed(self, src, dest):
         if not self.values[node]: raise ValueError("Node does not exist")
         self.values[node].append(to)
 
-    def add_edge_undirected(self, node, to):
+    def add_edge_undirected(self, src, dest):
         if not self.values[node]: raise ValueError("Node does not exist")
         if not self.values[to]: raise ValueError("Node to connect does not exist")
         self.values[node].append(to)
