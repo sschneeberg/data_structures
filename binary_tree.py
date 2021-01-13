@@ -13,3 +13,5 @@ def depth_search(node, val):
         depth_search(node.left, val)
     else: # search right
         depth_search(node.right, val)
+
+
