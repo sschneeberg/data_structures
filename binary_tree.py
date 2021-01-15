@@ -25,9 +25,6 @@ class Binary_Tree:
         new_node = Node(value)
         self.root.add_child(value, new_node)
 
-    def remove_node(self, value):
-        self.root.remove_child(value)
-
     def depth_search(self, node, val):
         if node.value == val: return node
         if not node.left and not node.right: return node
