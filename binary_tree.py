@@ -13,11 +13,6 @@ class Node:
             if not self.right: self.right = node
             else: self.right.add_child(value, node)
 
-    def remove_child(self, value):
-        return
-
-
-
 class Binary_Tree: 
     """ Simple Binary Tree """
     def __init__(self):
